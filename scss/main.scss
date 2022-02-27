@@ -1,2 +1,71 @@
 @import './resets';
 @import './config';
+
+// Hide Nav links
+.nav-links {
+  display: none;
+}
+
+.sidebar-links {
+  display: none;
+}
+
+header {
+  background: url('/images/mobile/image-header.jpg') center/cover no-repeat;
+  min-height: 65vh;
+
+  .nav-center {
+    display: grid;
+    align-items: centr;
+  }
+
+  .nav-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+
+    .nav-toggle {
+      background: transparent;
+      border: transparent;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.5rem;
+      justify-self: end;
+    }
+  }
+
+  .hero {
+    display: grid;
+    place-items: center;
+
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      font-size: 2.8rem;
+      max-width: 20rem;
+      letter-spacing: 6px;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      font-weight: weights(extra-bold);
+    }
+
+    .hero-img-container {
+      height: 120px;
+      width: 3rem;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@import './sections.';
+@import './testimonials';
+@import './photo-grid';
+@import './footer';

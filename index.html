@@ -12,37 +12,260 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
     <main>
-      About Services Projects Contact We are creatives Transform your brand We
-      are a full-service creative agency specializing in helping brands grow
-      fast. Engage your clients through compelling visuals that do most of the
-      marketing for you. Learn more Stand out to the right audience Using a
-      collaborative formula of designers, researchers, photographers,
-      videographers, and copywriters, we’ll build and extend your brand in
-      digital places. Learn more Graphic design Great design makes you
-      memorable. We deliver artwork that underscores your brand message and
-      captures potential clients’ attention. Photography Increase your
-      credibility by getting the most stunning, high-quality photos that improve
-      your business image. Client testimonials We put our trust in Sunnyside and
-      they delivered, making sure our needs were met and deadlines were always
-      hit. Emily R. Marketing Director Sunnyside’s enthusiasm coupled with their
-      keen interest in our brand’s success made it a satisfying and enjoyable
-      experience. Thomas S. Chief Operating Officer Incredible end result! Our
-      sales increased over 400% when we worked with Sunnyside. Highly
-      recommended! Jennie F. Business Owner About Services Projects Contact
+      <!-- || Header || -->
+      <header>
+        <!-- || Nav Bar || -->
+        <nav class="nav" id="nav">
+          <div class="nav-center">
+            <div class="nav-header">
+              <img src="./images/logo.svg" class="nav-logo" alt="logo" />
+              <button class="nav-toggle" id="nav-toggle">
+                <!-- <i class="fas fa-bars"></i> -->
+                <img
+                  src="./images/icon-hamburger.svg"
+                  class="nav-toggle-img"
+                  alt=""
+                />
+              </button>
+            </div>
+            <!-- nav links -->
+            <ul class="nav-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- end of nav links -->
+          </div>
+        </nav>
 
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/coder-teamie" target="_blank"
-          >coder-teamie</a
-        >.
+        <!-- || Sidebar || -->
+        <aside id="sidebar" class="sidebar">
+          <!-- nav links -->
+          <ul class="sidebar-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <!-- end of nav links -->
+        </aside>
+        <!-- end of sidebar -->
+
+        <!-- hero -->
+        <div class="hero">
+          <h1>we are creatives</h1>
+          <div class="hero-img-container">
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </div>
+        </div>
+        <!-- end of hero -->
+      </header>
+      <!-- || end of header || -->
+
+      <!-- section center -->
+      <div class="section-center">
+        <!-- || Info Section || -->
+        <!-- single section -->
+        <article class="section-1">
+          <!-- img -->
+          <div class="img-container"></div>
+          <!-- info -->
+          <div class="info">
+            <h1>Transform your brand</h1>
+            <p>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <div class="btn-container">
+              <button class="btn">Learn more</button>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </article>
+        <!-- end of single section -->
+
+        <!-- single section -->
+        <article class="section-2">
+          <!-- img -->
+          <div class="img-container"></div>
+          <!-- info -->
+          <div class="info">
+            <h1>Stand out to the right audience</h1>
+            <p>
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <div class="btn-container">
+              <button class="btn">Learn more</button>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </article>
+        <!-- end of single section -->
+        <!-- || End of Info Section || -->
+
+        <!-- || Services Section || -->
+        <section class="services-section">
+          <!-- single service -->
+          <article class="service-1">
+            <div class="service-container">
+              <h1>Graphic design</h1>
+              <p>
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
+          </article>
+          <!-- end of single service -->
+          <!-- single service -->
+          <article class="service-2">
+            <div class="service-container">
+              <h1>Photography</h1>
+              <p>
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
+          </article>
+          <!-- end of single service -->
+        </section>
+        <!-- || End of Services Section || -->
+
+        <!-- || Client Testimonials || -->
+        <section class="client-testimonials">
+          <h1>Client testimonials</h1>
+          <div class="testimonials">
+            <!-- single testimonial -->
+            <article class="testimonial">
+              <div class="testimonial-img-container">
+                <img src="/images/image-emily.jpg" alt="emily" />
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  We put our trust in Sunnyside and they delivered, making sure
+                  our needs were met and deadlines were always hit.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <h2>Emily R.</h2>
+                <p>Marketing Director</p>
+              </div>
+            </article>
+            <!-- end single testimonial -->
+            <!-- single testimonial -->
+            <article class="testimonial">
+              <div class="testimonial-img-container">
+                <img src="/images/image-thomas.jpg" alt="thomas" />
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  Sunnyside’s enthusiasm coupled with their keen interest in our
+                  brand’s success made it a satisfying and enjoyable experience.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <h2>Thomas S.</h2>
+                <p>Chief Operating Officer</p>
+              </div>
+            </article>
+            <!-- end single testimonial -->
+            <!-- single testimonial -->
+            <article class="testimonial">
+              <div class="testimonial-img-container">
+                <img src="/images/image-jennie.jpg" alt="jennie" />
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  Incredible end result! Our sales increased over 400% when we
+                  worked with Sunnyside. Highly recommended!
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <h2>Jennie F.</h2>
+                <p>Business Owner</p>
+              </div>
+            </article>
+            <!-- end single testimonial -->
+          </div>
+        </section>
+        <!-- || End of Client Testimonial || -->
+
+        <!-- || Photo Grid || -->
+        <div class="photo-grid">
+          <article class="grid-1"></article>
+          <article class="grid-2"></article>
+          <article class="grid-3"></article>
+          <article class="grid-4"></article>
+        </div>
+        <!-- || End of Photo Grid || -->
+
+        <!-- || Footer || -->
+        <footer>
+          <!-- footer logo -->
+          <img src="/images/alternate-logo.svg" class="footer-logo" alt="" />
+
+          <!-- footer links -->
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+
+          <!-- footer icons -->
+          <ul class="footer-icons">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- || Author || -->
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/coder-teamie" target="_blank"
+              >coder-teamie</a
+            >.
+          </div>
+        </footer>
+        <!-- || End of Footer || -->
       </div>
+      <!-- end of section center -->
     </main>
 
     <!-- js -->
