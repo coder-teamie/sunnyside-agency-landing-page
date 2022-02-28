@@ -4,6 +4,23 @@
 // Hide Nav links
 .nav-links {
   display: none;
+  grid-template-columns: repeat(4, 120px);
+  justify-self: end;
+  text-align: center;
+  font-size: 1rem;
+
+  li a {
+    color: $white;
+  }
+
+  // li:last-child a {
+  //   color: black;
+  //   font-weight: weights(bold);
+  // }
+  // li:last-child:hover a {
+  //   color: $white;
+  //   font-weight: weights(bold);
+  // }
 }
 
 .sidebar-links {
@@ -65,7 +82,40 @@ header {
   }
 }
 
-@import './sections.';
+@include tablet {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .nav-links {
+    display: grid;
+    padding: 0 1rem;
+    align-items: center;
+  }
+  .contact-btn {
+    border-color: transparent;
+    background: $white;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: $primaryFont;
+    @include transition(0.2s, ease-in-out);
+    color: black;
+    font-weight: weights(bold);
+  }
+  .contact-btn:hover {
+    background: hsl(200, 100, 72);
+    color: white;
+  }
+}
+
+@import './sections';
 @import './testimonials';
 @import './photo-grid';
 @import './footer';
+
+@import './responsive';

@@ -1,0 +1,211 @@
+@include tablet {
+  header {
+    background: url('/images/desktop/image-header.jpg') center/cover no-repeat;
+
+    .hero {
+      h1 {
+        font-size: 2rem;
+        max-width: 35rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+      }
+
+      .hero-img-container {
+        height: 100px;
+      }
+    }
+  }
+
+  // ***** SECTIONS *****
+
+  .section-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'info image';
+    min-height: 35vh;
+
+    .info {
+      grid-area: info;
+      text-align: left;
+      padding: 7rem 3rem;
+
+      h1 {
+        font-size: 1.85rem;
+        text-align: left;
+        justify-self: start;
+        max-width: 20rem;
+      }
+      p {
+        font-size: 0.85rem;
+        text-align: left;
+        max-width: 21rem;
+      }
+      .btn {
+        font-size: 0.7rem;
+      }
+    }
+
+    .img-container {
+      height: 100%;
+      grid-area: image;
+      background: url('/images/desktop/image-transform.jpg') center/cover
+        no-repeat;
+    }
+
+    // Underline
+    .underline {
+      width: 6.5rem;
+      height: 7px;
+      margin-left: 0;
+    }
+
+    // Btn Container
+    .btn-container {
+      justify-self: start;
+    }
+  }
+
+  // Switching Info w/ image
+  .section-2 {
+    .info {
+      grid-area: image;
+    }
+
+    .img-container {
+      grid-area: info;
+      background: url('/images/desktop/image-stand-out.jpg') center/cover
+        no-repeat;
+    }
+  }
+
+  // ***** SERVICES *****
+
+  .services-section {
+    display: flex;
+    min-height: 35vh;
+  }
+
+  .service-container {
+    h1 {
+      font-size: 1.4rem;
+    }
+    p {
+      margin-top: 1.3rem;
+      max-width: 20.4rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+  }
+
+  .service-1 {
+    height: 50vh;
+    background: url('/images/desktop/image-graphic-design.jpg') center/cover
+      no-repeat;
+    padding: 3rem 1rem;
+
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .service-2 {
+    background: url('/images/desktop/image-photography.jpg') center/cover
+      no-repeat;
+
+    .service-container {
+      p {
+        max-width: 19rem;
+      }
+    }
+  }
+
+  // ***** CLIENT TESTIMONIALS *****
+
+  .client-testimonials {
+    padding: 6rem 5rem;
+    h1 {
+      font-size: 0.9rem;
+      letter-spacing: 4px;
+    }
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+  }
+
+  .testimonial {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+
+    .testimonial-content {
+      align-self: flex-start;
+
+      p {
+        max-width: 16.5rem;
+        font-size: 0.85rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    .testimonial-author {
+      h2 {
+        font-size: 0.85rem;
+        font-weight: weights(extra-bold);
+        margin-bottom: 0.25rem;
+      }
+      p {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  // ***** PHOTO GRID *****
+
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    height: 30vh;
+
+    .grid-1 {
+      background: url('/images/desktop/image-gallery-milkbottles.jpg')
+        center/cover no-repeat;
+    }
+    .grid-2 {
+      background: url('/images/desktop/image-gallery-orange.jpg') center/cover
+        no-repeat;
+    }
+    .grid-3 {
+      background: url('/images/desktop/image-gallery-cone.jpg') center/cover
+        no-repeat;
+    }
+    .grid-4 {
+      background: url('/images/desktop/image-gallery-sugarcubes.jpg')
+        center/cover no-repeat;
+    }
+  }
+
+  // ***** FOOTER *****
+  footer {
+    min-height: 27vh;
+
+    .footer-logo {
+      width: 8rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      font-size: 0.9rem;
+    }
+
+    .footer-icons {
+      font-size: 1.1rem;
+      column-gap: 2rem;
+    }
+    .attribution a {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+  }
+}
