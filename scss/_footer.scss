@@ -23,8 +23,9 @@ footer {
 
   li a {
     display: inline-block;
-    color: $darkModerateCyan;
+    color: hsl(168, 45, 31);
     @include transition(0.2s, ease-in-out);
+    opacity: 0.7;
   }
   li a:hover {
     color: $white;
@@ -33,6 +34,9 @@ footer {
     display: flex;
     font-size: 1.5rem;
     column-gap: 2rem;
+    li a {
+      opacity: 1;
+    }
     @include transition(0.2s, ease-in-out);
   }
 

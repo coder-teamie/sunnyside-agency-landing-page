@@ -4,9 +4,9 @@
 
     .hero {
       h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         max-width: 35rem;
-        margin-top: 3rem;
+        margin-top: 5rem;
         margin-bottom: 5rem;
       }
 
@@ -21,14 +21,14 @@
   .section-1 {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'info image';
-    min-height: 35vh;
+    min-height: 50vh;
 
     .info {
       grid-area: info;
       text-align: left;
       padding: 7rem 3rem;
 
-      h1 {
+      h2 {
         font-size: 1.85rem;
         text-align: left;
         justify-self: start;
@@ -81,11 +81,11 @@
 
   .services-section {
     display: flex;
-    min-height: 35vh;
+    min-height: 45vh;
   }
 
   .service-container {
-    h1 {
+    h2 {
       font-size: 1.4rem;
     }
     p {
@@ -123,6 +123,7 @@
   // ***** CLIENT TESTIMONIALS *****
 
   .client-testimonials {
+    min-height: 65vh;
     padding: 6rem 5rem;
     h1 {
       font-size: 0.9rem;
@@ -166,7 +167,7 @@
 
   .photo-grid {
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-    height: 30vh;
+    height: 40vh;
 
     .grid-1 {
       background: url('/images/desktop/image-gallery-milkbottles.jpg')
@@ -188,7 +189,7 @@
 
   // ***** FOOTER *****
   footer {
-    min-height: 27vh;
+    min-height: 33vh;
 
     .footer-logo {
       width: 8rem;
@@ -196,7 +197,7 @@
     }
 
     .footer-links {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
 
     .footer-icons {

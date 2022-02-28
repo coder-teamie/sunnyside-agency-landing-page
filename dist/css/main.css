@@ -88,6 +88,16 @@ img:not(.nav-logo):not(.arrow-img):not(.footer-logo) {
   color: white;
 }
 
+.nav-links li:last-child a {
+  color: black;
+  font-weight: 700;
+}
+
+.nav-links li:last-child:hover a {
+  color: white;
+  font-weight: 700;
+}
+
 .sidebar-links {
   position: fixed;
   top: 4rem;
@@ -122,6 +132,15 @@ img:not(.nav-logo):not(.arrow-img):not(.footer-logo) {
   clip-path: polygon(0 10%, 25% 10%, 92% 10%, 100% 0, 100% 16%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
 }
 
+.show-sidebar .sidebar-links li:last-child {
+  margin-top: 2rem;
+}
+
+.show-sidebar .sidebar-links li:last-child a {
+  color: black;
+  font-weight: 700;
+}
+
 .show-sidebar .sidebar-links li {
   margin-bottom: 1.5rem;
 }
@@ -133,7 +152,7 @@ img:not(.nav-logo):not(.arrow-img):not(.footer-logo) {
 
 header {
   background: url("/images/mobile/image-header.jpg") center/cover no-repeat;
-  min-height: 65vh;
+  min-height: 75vh;
 }
 
 header .nav-center {
@@ -193,11 +212,13 @@ header .hero .hero-img-container img {
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
+    padding: 0.5rem 1.5rem;
   }
   .nav-links {
     display: grid;
     padding: 0 1rem;
     align-items: center;
+    font-size: 1.2rem;
   }
   .contact-btn {
     border-color: transparent;
@@ -205,7 +226,7 @@ header .hero .hero-img-container img {
     padding: 0.7rem 1rem;
     border-radius: 20px;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: "Fraunces", serif;
     transition: all 0.2s ease-in-out;
     color: black;
@@ -255,7 +276,7 @@ header .hero .hero-img-container img {
   place-items: center;
 }
 
-.section-1 .info h1, .section-2 .info h1 {
+.section-1 .info h2, .section-2 .info h2 {
   font-size: 2.5rem;
   text-align: center;
   max-width: 22rem;
@@ -304,7 +325,7 @@ header .hero .hero-img-container img {
   color: #25564b;
 }
 
-.service-container h1 {
+.service-container h2 {
   font-size: 2.1rem;
   text-transform: capitalize;
   font-weight: 900;
@@ -346,7 +367,7 @@ header .hero .hero-img-container img {
   margin-bottom: 2rem;
 }
 
-.client-testimonials h1 {
+.client-testimonials h2 {
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 4px;
@@ -448,8 +469,9 @@ footer .footer-links {
 
 footer li a {
   display: inline-block;
-  color: #458c7e;
+  color: #2b7364;
   transition: all 0.2s ease-in-out;
+  opacity: 0.7;
 }
 
 footer li a:hover {
@@ -461,6 +483,10 @@ footer .footer-icons {
   font-size: 1.5rem;
   column-gap: 2rem;
   transition: all 0.2s ease-in-out;
+}
+
+footer .footer-icons li a {
+  opacity: 1;
 }
 
 footer .footer-icons:hover {
@@ -482,9 +508,9 @@ footer .attribution a {
     background: url("/images/desktop/image-header.jpg") center/cover no-repeat;
   }
   header .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     max-width: 35rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
   }
   header .hero .hero-img-container {
@@ -493,14 +519,14 @@ footer .attribution a {
   .section-1, .section-2 {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'info image';
-    min-height: 35vh;
+    min-height: 50vh;
   }
   .section-1 .info, .section-2 .info {
     grid-area: info;
     text-align: left;
     padding: 7rem 3rem;
   }
-  .section-1 .info h1, .section-2 .info h1 {
+  .section-1 .info h2, .section-2 .info h2 {
     font-size: 1.85rem;
     text-align: left;
     justify-self: start;
@@ -536,9 +562,9 @@ footer .attribution a {
   }
   .services-section {
     display: flex;
-    min-height: 35vh;
+    min-height: 45vh;
   }
-  .service-container h1 {
+  .service-container h2 {
     font-size: 1.4rem;
   }
   .service-container p {
@@ -564,6 +590,7 @@ footer .attribution a {
     max-width: 19rem;
   }
   .client-testimonials {
+    min-height: 65vh;
     padding: 6rem 5rem;
   }
   .client-testimonials h1 {
@@ -597,7 +624,7 @@ footer .attribution a {
   }
   .photo-grid {
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-    height: 30vh;
+    height: 40vh;
   }
   .photo-grid .grid-1 {
     background: url("/images/desktop/image-gallery-milkbottles.jpg") center/cover no-repeat;
@@ -612,14 +639,14 @@ footer .attribution a {
     background: url("/images/desktop/image-gallery-sugarcubes.jpg") center/cover no-repeat;
   }
   footer {
-    min-height: 27vh;
+    min-height: 33vh;
   }
   footer .footer-logo {
     width: 8rem;
     margin-bottom: 1rem;
   }
   footer .footer-links {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   footer .footer-icons {
     font-size: 1.1rem;
