@@ -89,7 +89,46 @@ img:not(.nav-logo):not(.arrow-img):not(.footer-logo) {
 }
 
 .sidebar-links {
-  display: none;
+  position: fixed;
+  top: 4rem;
+  right: 1.8rem;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s linear;
+  transform: translateX(-100%);
+  padding: 2rem 1rem;
+  padding-top: 3rem;
+}
+
+.sidebar-links .contact-btn-sidebar {
+  background: #fad400;
+  padding: 1rem 1.7rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-color: transparent;
+  border-radius: 30px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+}
+
+.show-sidebar .sidebar-links {
+  transform: translate(0);
+  background: white;
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s linear;
+  clip-path: polygon(0 10%, 25% 10%, 92% 10%, 100% 0, 100% 16%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+
+.show-sidebar .sidebar-links li {
+  margin-bottom: 1.5rem;
+}
+
+.show-sidebar .sidebar-links li a {
+  color: #818498;
+  font-size: 1.3rem;
 }
 
 header {
@@ -107,7 +146,7 @@ header .nav-header {
   grid-template-columns: auto 1fr;
   align-items: center;
   height: 5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.8rem;
 }
 
 header .nav-header .nav-toggle {

@@ -13,8 +13,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-## Overview
-
 ### The challenge
 
 Users should be able to:
@@ -24,14 +22,17 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshot.jpg)
+![Desktop Layout](/images/desktop-layout.png)
+![Mobile Layout](/images/mobile-layout.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Live Site URL: [Netlify](https://coder-teamie-sunnyside-agency-landing-page.netlify.app/)
 
 ## My process
+
+I started this challenge by analyzing the mockup given and making a list of the required sections and what kind of technologies or resources I might need to fulfil the requirements. Then I moved on to developing the markup for the entire page using HTML Semantics after which I further dived into using SCSS to style the pages. I started by building the navigation and went on to complete the entire mobile layout before moving to the tablet/desktop layouts.
 
 ### Built with
 
@@ -44,24 +45,51 @@ Users should be able to:
 
 ### What I learned
 
-## Some code snippets:
+In this challenge I was able to learn how to use the clip-path to create shapes in CSS and I also learnt how to use the :not() custom property in CSS. This challenge helped me enhance my knowledege about the CSS Grid and Flexbox.
 
-```html
+## Some custom styles
 
-```
+```scss
+$font-weights: (
+  'regular': 400,
+  'medium': 600,
+  'bold': 700,
+  'extra-bold': 900,
+);
 
-```css
+@function weights($size) {
+  @return map-get($font-weights, $size);
+}
 
+@mixin transition($duration, $speed) {
+  transition: all $duration $speed;
+}
+
+@mixin tablet {
+  @media screen and (min-width: 687px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
 ```
 
 ```js
+const toggleBtn = document.getElementById('nav-toggle');
+const sidebar = document.getElementById('sidebar');
 
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('show-sidebar');
+});
 ```
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) -
-- [Example resource 2](https://www.example.com) -
+- [CSS Clip-Path Maker](https://bennettfeely.com/clippy/) Create Custom shapes in CSS
 
 ## Author
 

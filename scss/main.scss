@@ -23,9 +23,69 @@
   // }
 }
 
+// ***** SIDEBAR *****
+
 .sidebar-links {
-  display: none;
+  position: fixed;
+  top: 4rem;
+  right: 1.8rem;
+  width: 100%;
+  height: auto;
+  @include transition(0.3s, linear);
+
+  // Hide Sidebar
+  transform: translateX(-100%);
+  padding: 2rem 1rem;
+  padding-top: 3rem;
+
+  .contact-btn-sidebar {
+    background: $yellow;
+    padding: 1rem 1.7rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-color: transparent;
+    border-radius: 30px;
+    font-weight: weights(bold);
+    font-family: $primaryFont;
+    cursor: pointer;
+  }
 }
+
+.show-sidebar .sidebar-links {
+  // Show sidebar
+  transform: translate(0);
+  background: white;
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+
+  @include transition(0.3s, linear);
+  clip-path: polygon(
+    0 10%,
+    25% 10%,
+    92% 10%,
+    100% 0,
+    100% 16%,
+    100% 15%,
+    100% 85%,
+    100% 100%,
+    85% 100%,
+    15% 100%,
+    0 100%,
+    0% 85%
+  );
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  li a {
+    color: $darkGrayishBlue;
+    font-size: 1.3rem;
+  }
+}
+
+// ***** HEADER *****
 
 header {
   background: url('/images/mobile/image-header.jpg') center/cover no-repeat;
@@ -41,7 +101,7 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     height: 5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.8rem;
 
     .nav-toggle {
       background: transparent;
@@ -53,6 +113,7 @@ header {
     }
   }
 
+  // HERO
   .hero {
     display: grid;
     place-items: center;
@@ -82,6 +143,7 @@ header {
   }
 }
 
+// TABLET LAYOUT
 @include tablet {
   .nav-toggle {
     display: none;
