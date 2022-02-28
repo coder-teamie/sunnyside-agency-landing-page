@@ -368,7 +368,7 @@ header .hero .hero-img-container img {
 }
 
 .client-testimonials h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 900;
   letter-spacing: 4px;
   color: #a7abae;
@@ -408,8 +408,8 @@ header .hero .hero-img-container img {
   margin-bottom: 2.5rem;
 }
 
-.testimonial .testimonial-author h2 {
-  font-size: 1.3rem;
+.testimonial .testimonial-author h3 {
+  font-size: 1.2rem;
   font-weight: 900;
   margin-bottom: 0.25rem;
 }
@@ -527,10 +527,10 @@ footer .attribution a {
     padding: 7rem 3rem;
   }
   .section-1 .info h2, .section-2 .info h2 {
-    font-size: 1.85rem;
+    font-size: 1.95rem;
     text-align: left;
     justify-self: start;
-    max-width: 20rem;
+    max-width: 22rem;
   }
   .section-1 .info p, .section-2 .info p {
     font-size: 0.85rem;
@@ -538,7 +538,7 @@ footer .attribution a {
     max-width: 21rem;
   }
   .section-1 .info .btn, .section-2 .info .btn {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .section-1 .img-container, .section-2 .img-container {
     height: 100%;
@@ -546,7 +546,7 @@ footer .attribution a {
     background: url("/images/desktop/image-transform.jpg") center/cover no-repeat;
   }
   .section-1 .underline, .section-2 .underline {
-    width: 6.5rem;
+    width: 7.5rem;
     height: 7px;
     margin-left: 0;
   }
@@ -610,8 +610,8 @@ footer .attribution a {
     align-self: flex-start;
   }
   .testimonial .testimonial-content p {
-    max-width: 16.5rem;
-    font-size: 0.85rem;
+    max-width: 23.5rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
   }
   .testimonial .testimonial-author h2 {
