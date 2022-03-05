@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-using-css-and-js-_O13pQDxR)
 - Live Site URL: [Netlify](https://coder-teamie-sunnyside-agency-landing-page.netlify.app/)
 
 ## My process
@@ -79,11 +79,13 @@ $font-weights: (
 ```
 
 ```js
-const toggleBtn = document.getElementById('nav-toggle');
-const sidebar = document.getElementById('sidebar');
+// Remove mobile nav dynamically at 678px w/o btn
+window.addEventListener('resize', () => {
+  const width = `687`;
 
-toggleBtn.addEventListener('click', () => {
-  sidebar.classList.toggle('show-sidebar');
+  if (window.innerWidth > width) {
+    sidebar.classList.remove('show-sidebar');
+  }
 });
 ```
 
